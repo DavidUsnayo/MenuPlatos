@@ -5,7 +5,12 @@
         font-family: "Luckiest Guy"; /*nombre asignado*/
         src: url("./asset/LuckiestGuy.ttf"); /*archivo TTF */
     }
+ body{background: #c9dcd5; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #d7e8e2, #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #d8e7e1, #eef2f3);
+        user-select: none;}
 .contenedor{max-width:1650px;
+    width:100%;
     height:100vh;
     max-height:800px;
     overflow:hidden;
@@ -241,6 +246,11 @@ transition:1s;}
         .subtitle{font-size:14px;}
         .texto{font-size:14px;}
 }
+@media(min-width:1680px){
+        body{display:flex;
+                justify-content:center;
+                align-items:center;
+                height:100vh;}}
 @media(max-width:650px){
         .redes{width:250px;}
         .contenido{margin:0px 60px;}
