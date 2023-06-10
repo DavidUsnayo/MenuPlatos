@@ -60,6 +60,7 @@ three.addEventListener("click",function(){
     subtitle.textContent = info_3.subtitulo
     texto.textContent = info_3.parrafo
 })
+
 let four = document.querySelector(".four")
 four.addEventListener("click",function(){
     circle.style.transform="rotate(270deg)"
