@@ -1,0 +1,258 @@
+*{padding:0;
+  margin:0;
+  font-family:helvetica;}
+@font-face {
+        font-family: "Luckiest Guy"; /*nombre asignado*/
+        src: url("../asset/LuckiestGuy.ttf"); /*archivo TTF */
+    }
+.contenedor{max-width:1650px;
+    height:100vh;
+    max-height:800px;
+    overflow:hidden;
+    margin:auto;
+    position:relative;
+    box-shadow:0px 0px 20px rgba(128, 128, 128, 0.819);
+    background: #c9dcd5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c9dcd5, #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c9dcd5, #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+.cont{width:1300px;
+      margin:auto;
+      display:flex;}
+
+.caja_1{display:flex;
+        }
+.uno{width:400px;}
+.uno img{width:400px;
+         position:absolute;
+         filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.7));animation:1s ro;}
+.circle{background:#6eb5aa;
+       border-radius:50%;
+       width:1000px;
+       height:1000px;
+       position:relative;
+       left:-650px;
+       top:-500px;
+       transition:1s;
+       box-shadow:0px 0px 30px gray;
+       z-index:20}
+.circle:hover{transform:rotate(90deg)}
+.circle img:nth-child(1){bottom:0;transform:rotate(90deg)}
+.circle img:nth-child(2){right:0;}
+.circle img:nth-child(3){left:0;}
+.circle img:nth-child(4){bottom:0; right:0;}
+
+.dos{display:flex;
+     align-items:center;}
+.dos_1{height:75%;}
+
+.dos p{letter-spacing:0px;
+       line-height:72px;}
+.dos .p{font-size:50px;
+    font-family:'verdana';
+       font-weight:lighter;
+       color:rgba(0, 0, 0, 0.563);}
+.dos .h3{font-size:88px;
+        font-weight:lighter;
+        font-family:'Luckiest Guy';
+        color:rgba(0, 0, 0, 0.606);}
+.dos .h1{font-size:120px;
+        font-weight:lighter;
+        font-family:'Luckiest Guy';
+        }
+.o{animation-name:ni;
+   animation-duration:3s;}
+.caja_2{display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        width:100%;
+        height:700px;}
+.contenido{background:rgba(248, 248, 248, 0.724);
+           padding:20px;
+           border-radius:20px;
+           width:270px;
+           height:380px;
+           overflow:hidden;
+           transition:1s;}
+.contenido:hover{box-shadow:0px 0px 20px rgba(136, 136, 136, 0.51);}
+.me{display:flex;
+    justify-content:space-evenly;
+    padding:10px 0px;}
+.me p:nth-child(1){font-weight:bold;}
+.puntos{width:100%;
+        margin:20px 0px;}
+.punto_1{background:#fad928;
+         padding:15px 10px;;
+         width:25px;
+         margin:10px 0px;
+         border-radius:10px;}
+.punto_1 p{font-size:40px;
+           font-weight:bold;}
+.discripcion p{color:rgba(0, 0, 0, 0.753);}
+.discripcion h5{font-weight:lighter;
+         margin:5px 0px 15px 0px;
+         color:rgba(0, 0, 0, 0.719);}
+.like{display:flex;
+      margin:33px 0px;}
+.no img,
+.si img{width:25px;}
+.si p{font-size:12px;
+      margin-left:10px;}
+.si,
+.no{background:rgb(234, 234, 234);
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    padding:5px 10px;
+    margin-right:15px;
+    cursor:pointer;
+    transition:0.5s;}
+.animate__bounce{background:rgb(160, 203, 238);
+                 color:rgb(240, 240, 240);
+                 box-shadow:0px 0px 10px rgb(160, 203, 238);}
+.section{display:flex;
+         justify-content:center;}
+.section_cajas{display:flex;
+               width:600px;
+               justify-content:space-between;
+               position:absolute;
+               top:500px;
+               margin-right:100px;}
+.section_cajas img{width:100px;}
+.section_cajas div{width:100px;
+                   height:180px;
+                   padding:10px;
+                   border-radius:15px;
+                   margin:0px 10px;
+                   background:rgba(16, 16, 16, 0.041);
+                   transition:0.5s;}
+.section_cajas div:hover{background:rgba(16, 16, 16, 0.131);}
+.section_cajas div h5{margin:15px 0px;
+                     text-align:center;}
+.informacion{display:flex;
+/* transform:translate(-295px); */
+transition:1s;}
+.discripcion{min-width:100%;
+      margin-right:25px;
+      opacity: 1;
+      animation:5s o}
+.redes{position:absolute;
+      top:660px;
+      left:180px;
+      display:flex;
+      cursor:pointer;}
+.redes h6{margin:0px 5px;
+          padding:10px 20px;
+          border-radius:10px;
+          transition:1s;
+          color:rgba(0, 0, 0, 0.306);
+          background:rgba(7, 7, 7, 0.044);}
+.redes h6:nth-child(1):hover{background:rgb(40, 127, 208); color:rgba(255, 255, 255, 0.895); box-shadow:0px 0px 10px rgb(41, 120, 231);}
+.redes h6:nth-child(2):hover{background:rgb(253, 75, 75); color:rgba(255, 255, 255, 0.898); box-shadow:0px 0px 10px rgb(233, 88, 88);}
+
+.none{height:180px;
+      box-shadow:0px 0px 10px rgba(170, 163, 163, 0.11);
+      border-radius:25px;
+      margin:15px;
+      display:none;
+      background:rgba(248, 248, 248, 0.569);}
+.none p{font-size:80px;
+        text-align:center;
+        text-shadow:0px 0px 10px rgba(94, 94, 94, 0.351);
+        color:rgba(128, 128, 128, 0.109);
+        font-family:'Luckiest Guy';
+        line-height:50px;
+        padding:25px 0px;
+        animation:1s ro infinite;}
+/* animaciones*/
+.ni{animation-name:ko;
+    animation-duration:2s;}
+.discripcion{animation:2s u;}
+.a{animation:2s o;}
+
+@keyframes ni{
+        0%{color:rgb(236, 236, 236);
+           transform:translate(-900px, 0px);}
+        50%{transform:translate(0px,0px);}}
+@keyframes ko{
+        0%{color:rgb(15, 195, 168);
+           transform:translate(-900px, 0px);}
+        50%{transform:translate(0px,0px);}}
+@keyframes o{
+        0%{opacity:0;}
+        100%{opacity:1;}}
+@keyframes u{
+        0%{opacity:0;}
+        100%{opacity:1;}}
+@keyframes ro{
+        0%{transform:rotate(0deg);}
+        50%{transform:rotate(4deg);
+            color:rgba(144, 144, 144, 0.023)}
+        100%{transform:rotate(0deg)}
+}
+
+@media (max-width:800px){
+        body{background: #c9dcd5; /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #c9dcd5, #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #c9dcd5, #eef2f3);}
+        .contenedor{box-shadow:0px 0px 0px;}
+        .cont{max-width:500px;}
+        .caja_1{flex-wrap:0;}
+        .cont{flex-wrap:wrap;}
+        .uno{width:210px;}
+        .dos p{line-height:30px;}
+        .dos .h1{font-size:50px;}
+        .dos .h3{font-size:40px;}
+        .dos .p{font-size:25px;}
+        .dos_1{height:85%;}
+        .circle{width:595px;
+                height:595px;
+                left:-400px;
+                top:-400px;}
+        .uno img{width:170px;}
+        .caja_2{justify-content:flex-start;}
+        .section_cajas{top:250px;
+                       margin:0;
+                       width:380px;
+                       padding:0px 50px;}
+        .section_cajas img{width:60px;}
+        .section_cajas div{width:60px;
+                           height:100px;
+                           margin:0;
+                           }
+        .section_cajas div h5{font-size:10px;}
+        .redes{top:180px;
+                width:300px;
+                justify-content:flex-end;}
+        .redes h6{font-size:10px;
+                  padding:7px 12px;
+                  border-radius:5px;}
+        .union{display:flex;
+               justify-content:center;
+               }
+        .contenido{width:350px;
+                   height:250px;
+                   margin:0px 70px;
+                   padding:10px;
+                   position:absolute;
+                   top:400px;
+                   }
+        .informacion{margin-top:15px;}
+        .title{font-size:20px;}
+        .subtitle{font-size:14px;}
+        .texto{font-size:14px;}
+}
+@media(max-width:650px){
+        .redes{width:250px;}
+        .contenido{margin:0px 60px;}
+        .contenedor{border-radius:0px 0px 40px 40px;
+                    box-shadow:0px 0px 0px;
+                    max-height:690px;}}
+@media(max-width:500px){
+        .none{display:block;}
+        .redes{width:210px;}
+        .contenido{margin:0px 30px 0px 40px;}}
+@media(max-width:420px){
+        .contenido{margin:0px 15px;}}
+@media(max-width:390px){
+        .contenido{width:300px;}
+        .section_cajas{width:350px;}}
