@@ -47,8 +47,7 @@
 
 .dos{display:flex;
      align-items:center;}
-.dos_1{height:75%;
-       user-select: none;}
+.dos_1{height:75%;}
 .dos p{letter-spacing:0px;
        line-height:72px;}
 .dos .p{font-size:50px;
