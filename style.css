@@ -7,8 +7,7 @@
     }
  body{background: #c9dcd5; /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #d7e8e2, #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #d8e7e1, #eef2f3);
-        user-select: none;}
+        background: linear-gradient(to right, #d8e7e1, #eef2f3);}
 .contenedor{max-width:1650px;
     width:100%;
     height:100vh;
@@ -48,8 +47,8 @@
 
 .dos{display:flex;
      align-items:center;}
-.dos_1{height:75%;}
-
+.dos_1{height:75%;
+       user-select: none;}
 .dos p{letter-spacing:0px;
        line-height:72px;}
 .dos .p{font-size:50px;
